@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan menggunakan V-IF</title>
+
+    <!-- CDN Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <!-- Container Vue -->
+    <div id="app">
+        <h1 v-if="Lihat">Hasil Dari V-IF</h1>
+    </div>
+
+    <!-- Program Vue -->
+    <script>
+        let app = new Vue({
+            el: "#app",
+            data: {
+                Lihat : true
+            }
+        })
+    </script>
+</body>
+</html>
