@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan menggunakan V-For</title>
+
+    <!-- CDN Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <!-- Container Vue -->
+    <div id="warteg">
+        <ol>
+            <li v-for="menu in menus" v-if="makan">
+                {{menu.makanan}}
+            </li>
+        </ol>
+    </div>
+
+    <!-- Program Vue -->
+    <script>
+        let app = new Vue({
+            el: "#warteg",
+            data: {
+                menus:[
+                    {makanan: "Nasi Goreng"},
+                    {makanan: "Mie Goreng"},
+                    {makanan: "Nasi Megono + Mendoan"}
+                ],
+                makan : true
+            }
+        })
+    </script>
+</body>
+</html>
