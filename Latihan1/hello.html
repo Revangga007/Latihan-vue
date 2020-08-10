@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Hello World dengan Vue</title>
+
+    <!-- CDN  Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <!-- Container Vue -->
+    <div id="app">
+        <h1>{{judul}}</h1>
+    </div>
+
+    <!-- Program Vue -->
+    <script>
+        let app = new Vue({
+            el : "#app",
+            data : {
+                judul : "Hello World"
+            }
+        })
+    </script>
+</body>
+</html>
